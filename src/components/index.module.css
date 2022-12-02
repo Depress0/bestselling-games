@@ -55,12 +55,27 @@
 body{
   background-color: black;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 a{
   color: white;
 }
+.navlink{
+  padding: 1rem;
+  background-color: rgb(53, 9, 142);
+  text-decoration: none;
+}
 .header{
   background-color: rgb(78, 15, 203);
-  padding: .25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
   list-style: none;
+  margin-left: none;
+  margin-right: none;
+  padding-left: none;
+  padding-right: none;
+}
+main {
+  text-align: center;
+  justify-content: center;
 }

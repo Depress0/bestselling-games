@@ -17,19 +17,25 @@ query MyQuery {
       description
       featuredGames {
         ... on WpGame {
-          title
+          gameFields {
+            title
+            picture {
+              sourceUrl
+            }
+          }
         }
       }
     }
   }
 }`)
   return <div>
-    <h2>{data.wpPage.homePage.title}</h2>
-    <div>{data.wpPage.homePage.description}</div>
+    <div className={styles.desc}>{data.wpPage.homePage.description}</div>
     <br></br>
-    <h3>Featured Games</h3>
-    {data.wpPage.homePage.featuredGames.map((game, index) => <p key={index}>{game.title}</p>)}
+    <h3 className={styles.title2}>Featured Games</h3>
+    {data.wpPage.homePage.featuredGames.map((game, index) => <div><img src={game.gameFields.picture.sourceUrl} alt="" /><p className="home-featured-games" key={index}>{game.gameFields.title}</p></div>)}
   </div>
+  
+  
 }
 
 const IndexPage = () => (
