@@ -52,3 +52,15 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+body{
+  background-color: black;
+  color: white;
+}
+a{
+  color: white;
+}
+.header{
+  background-color: rgb(78, 15, 203);
+  padding: .25rem;
+  list-style: none;
+}
