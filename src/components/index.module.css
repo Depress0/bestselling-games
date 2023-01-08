@@ -1,73 +1,28 @@
-.list {
-  display: grid;
-  margin: 0;
-  /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
-  --w: 280px;
-  --n: 2;
-  gap: var(--size-gap);
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr)
-  );
-  margin-bottom: var(--size-gap);
-  margin-top: var(--size-gap);
-}
 
-.listItem {
-  margin: 0;
-}
-
-.listItem::marker {
-  color: #e95800;
-}
-
-.listItem:nth-child(2)::marker {
-  color: #159bf3;
-}
-
-.listItem:nth-child(3)::marker {
-  color: #8eb814;
-}
-
-.listItem:nth-child(4)::marker {
-  color: #663399;
-}
-
-.listItemLink {
-  color: var(--color-primary);
-  font-weight: bold;
-}
-
-.listItemDescription {
-  color: var(--color-text);
-  margin-bottom: 0;
-  margin-top: var(--space-1);
-}
-
-.textCenter {
-  text-align: center;
-}
-
-.intro {
-  max-width: none;
-  line-height: var(--line-height-loose);
-}
 body{
-  background-color: black;
+  background: linear-gradient( 110.1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  margin: none;
+  padding: none;
+}
+div{
+  margin: none;
+  padding: none;
 }
 a{
   color: white;
 }
 .navlink{
   padding: 1rem;
-  background-color: rgb(53, 9, 142);
+  margin: 1rem;
+  background-color: rgba(212, 212, 212, 0.067);
   text-decoration: none;
 }
 .header{
-  background-color: rgb(78, 15, 203);
+  background-color: rgb(41, 41, 41);
   padding: 1rem;
+  padding-bottom: 2rem;
   margin-bottom: 1rem;
   list-style: none;
   margin-left: none;
@@ -79,3 +34,17 @@ main {
   text-align: center;
   justify-content: center;
 }
+.gamesdesc {
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.maindiv {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+

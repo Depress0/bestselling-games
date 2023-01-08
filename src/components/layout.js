@@ -9,7 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-import { header, navlink } from "./index.module.css"
+import { header, navlink, childrencss } from "./index.module.css"
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -28,10 +28,10 @@ const Layout = ({ pageTitle, children }) => {
         <h1>{data.site.siteMetadata.title}</h1>
         <nav>
           <Link className={navlink} to="/">Home</Link>
-          <Link className={navlink} to="games">Games</Link>
+          <Link className={navlink} to="GamePage">Games</Link>
         </nav>
       </div>
-      <main>
+      <main className={childrencss}>
         {children}
       </main>
     </>

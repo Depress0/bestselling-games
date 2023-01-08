@@ -34,8 +34,8 @@ query MyQuery {
     <h3 className={styles.title2}>Featured Games</h3>
     {data.wpPage.homePage.featuredGames.map((game, index) => <div><img src={game.gameFields.picture.sourceUrl} alt="" /><p className="home-featured-games" key={index}>{game.gameFields.title}</p></div>)}
   </div>
-  
-  
+
+
 }
 
 const IndexPage = () => (

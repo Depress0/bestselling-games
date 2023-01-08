@@ -1,3 +1,5 @@
+const { node } = require("prop-types")
+
 exports.createPages = async ({ actions }) => {
   const { createPage } = actions
   createPage({
